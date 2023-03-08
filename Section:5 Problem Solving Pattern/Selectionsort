@@ -1,0 +1,19 @@
+function selectionsort(arr){
+    for(var i=0;i<arr.length;i++)
+        {
+            var lowest=i;
+            for(var j=i+1;j<arr.lenght;j++)
+                {
+                    if(arr[j]<arr[lowest])
+                    {
+                        lowest=j;
+                    }
+                }
+            var temp=arr[j];
+            arr[j]=arr[lowest];
+            arr[lowest]=temp;
+        }
+        return arr;
+}
+
+selectionsort([5,1,58,3,6,4,2]);
